@@ -32,7 +32,7 @@ public:
         // To form a MST using Kruskals, sort edges by their weights
         sort(edges.begin(), edges.end(), cmp);
 
-        // 3. Perform Kruskals. To detect Cycle use Union find.
+        // Perform Kruskals. To detect Cycle use Union find.
         int mstwt = findMST(n, edges, -1, -1);
         for(int i=0; i<size(edges); i++){
 
