@@ -3,6 +3,7 @@ public:
     vector<string> fullJustify(vector<string>& words, int maxWidth) {
         int n=size(words);
         vector<string> ans;
+
         for(int i=0, w; i<n; i=w){
             int len=-1; // reset
             for(w=i; w<n && len+size(words[w])+1<=maxWidth; w++){
